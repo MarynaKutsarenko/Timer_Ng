@@ -13,7 +13,6 @@ export class TimerComponent implements OnInit {
   private isTimerActive: boolean = false;
   private time$: Observable<number> = timer(1, 1000);
   private sub: Subscription = new Subscription();
-  private subWait: Subscription = new Subscription();
 
 
   public tooglePlay(): void {
