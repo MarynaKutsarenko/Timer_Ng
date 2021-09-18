@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ForTimerModule } from './modules/for-timer/for-timer.module';
+
 
 @NgModule({
   declarations: [
@@ -10,9 +12,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ForTimerModule
   ],
-  providers: [],
+  providers: [ForTimerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

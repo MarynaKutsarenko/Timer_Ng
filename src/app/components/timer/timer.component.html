@@ -1,0 +1,20 @@
+<div class="content_main">
+   <p class="text">{{ time }} </p>
+
+   <div class="group-controle">
+
+      <button class="btn" 
+      (click)="tooglePlay()">
+         Start / Stop
+      </button>
+
+      <button class="btn"
+      (dblclick)="onWait()">
+         Wait
+      </button>
+      <button class="btn"
+      (click)="onReset()">
+         Reset
+      </button>
+   </div>
+</div>
